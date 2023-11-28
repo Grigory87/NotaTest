@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface MainController {
 
     @PostMapping("/calculation")
-    @Operation(summary = "Результат подсчёта", description = "Позволяет получить карту вхождений символов в строке" +
+    @Operation(summary = "Результат подсчёта", description = "Позволяет получить карту вхождений символов в строке " +
             "с количеством повторений")
     ResponseEntity<?> countingLetters(@RequestBody RequestDto requestDto);
 }
